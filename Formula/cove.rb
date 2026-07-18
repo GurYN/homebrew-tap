@@ -8,7 +8,9 @@ class Cove < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/cove"
+    system "go", "build",
+      *std_go_args(ldflags: "-s -w -X main.version=v#{version}"),
+      "./cmd/cove"
   end
 
   test do
