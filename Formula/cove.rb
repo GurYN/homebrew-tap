@@ -1,8 +1,8 @@
 class Cove < Formula
   desc "GUI-native terminal IDE written in Go"
   homepage "https://github.com/GurYN/cove-editor"
-  url "https://github.com/GurYN/cove-editor/archive/refs/tags/v0.13.2.tar.gz"
-  sha256 "ad33e6a40a186ebd01a1267eadc2a6d93bd770697475fff80075cbf1da27442b"
+  url "https://github.com/GurYN/cove-editor/archive/refs/tags/v0.13.3.tar.gz"
+  sha256 "c9c85d30d5ec6aab2ea80315d6d435295296171372f281aa40ce894272b017e9"
   license "MIT"
 
   depends_on "go" => :build
