@@ -8,6 +8,7 @@ class Cove < Formula
   depends_on "go" => :build
 
   def install
+    ENV["CGO_ENABLED"] = "1"
     system "go", "build",
       *std_go_args(ldflags: "-s -w -X main.version=v#{version}"),
       "./cmd/cove"
